@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"target": "es2015",
+    "moduleResolution": "node",
+    "declaration": true,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "pretty": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noEmitHelpers": true,
+    "noEmitOnError": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "noFallthroughCasesInSwitch": true,
+		"lib": ["es2017", "dom", "es6"],
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["src/*"],
+			"*": ["./node_modules/*"]
+		}
+	},
+  "exclude": [
+    "platforms"
+  ],
+	"include": [
+    "src",
+    "node_modules/nativescript-advanced-camera/**/*"
+  ]
+}

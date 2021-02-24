@@ -1,0 +1,10 @@
+<ActionBar>
+    <Label text="Home"></Label>
+</ActionBar>
+
+<StackLayout>
+    <AdvancedCamera height="300dp" width="300dp" backgroundColor="black" (loaded)="onLoaded($event)"></AdvancedCamera>
+
+    <Button text="Record" (tap)="record()"></Button>
+    <Button text="Stop Recording" (tap)="stop()"></Button>
+</StackLayout>
