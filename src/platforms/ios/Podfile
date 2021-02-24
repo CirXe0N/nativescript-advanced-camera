@@ -1,0 +1,1 @@
+pod 'CameraManager', :git => 'https://github.com/CirXe0N/CameraManager.git', :branch => 'master'

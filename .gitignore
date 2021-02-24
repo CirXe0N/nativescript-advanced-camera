@@ -1,13 +1,15 @@
 # NativeScript
 hooks/
 node_modules/
-platforms/
 nsconfig.json
+demo-angular/platforms/
 
 # NativeScript Template
 *.js.map
 *.js
 !webpack.config.js
+!src/scripts/*.js
+!src/scripts/*.js.map
 
 # Logs
 logs
@@ -25,6 +27,7 @@ yarn-error.log*
 .project
 tmp/
 typings/
+!src/typings/
 
 # Visual Studio Code
 .vscode/*
