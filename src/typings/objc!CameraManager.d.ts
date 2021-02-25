@@ -7,9 +7,25 @@ declare class CameraManager extends NSObject implements AVCaptureFileOutputRecor
 
 	readonly cameraIsReady: boolean;
 
+	captureSession: AVCaptureSession;
+
 	hasFrontCamera: boolean;
 
+	imageAlbumName: string;
+
+	shouldFlipFrontCameraImage: boolean;
+
+	shouldKeepViewAtOrientationChanges: boolean;
+
+	shouldRespondToOrientationChanges: boolean;
+
 	showAccessPermissionPopupAutomatically: boolean;
+
+	showErrorsToUsers: boolean;
+
+	videoAlbumName: string;
+
+	writeFilesToPhoneLibrary: boolean;
 
 	readonly debugDescription: string; // inherited from NSObjectProtocol
 
