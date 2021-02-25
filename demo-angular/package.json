@@ -14,14 +14,14 @@
     "template"
   ],
   "repository": {
-		"type": "git",
-		"url": "https://github.com/CirXe0N/nativescript-advanced-camera.git"
-	},
+    "type": "git",
+    "url": "https://github.com/CirXe0N/nativescript-advanced-camera.git"
+  },
   "homepage": "https://github.com/CirXe0N/nativescript-advanced-camera.git",
   "author": {
-		"name": "CirXe0N",
-		"email": "dwayne@cirxsoftware.com"
-	},
+    "name": "CirXe0N",
+    "email": "dwayne@cirxsoftware.com"
+  },
   "bugs": {
     "url": "https://github.com/CirXe0N/nativescript-advanced-camera/issues"
   },

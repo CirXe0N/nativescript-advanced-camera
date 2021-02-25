@@ -12,6 +12,11 @@ registerElement('AdvancedCamera', () => AdvancedCamera);
 export class HomeComponent {
     private cam: AdvancedCamera;
 
+    public onLoaded(event: EventData) {
+        console.log('Cam Loaded');
+        this.cam = <AdvancedCamera> event.object;
+    }
+
     public record(): void {
         console.log('Start Recording');
         this.cam.record();
@@ -24,8 +29,19 @@ export class HomeComponent {
         });
     }
 
-    public onLoaded(event: EventData) {
-        console.log('Cam Loaded');
-        this.cam = <AdvancedCamera> event.object;
+    public shouldKeepViewAtOrientationChanges(): void {
+        const value = !this.cam.shouldKeepViewAtOrientationChanges;
+        console.log(`Should keep view at orientation changes: ${value}`);
+        this.cam.shouldKeepViewAtOrientationChanges = value;
+    }
+
+    public shouldRespondToOrientationChanges(): void {
+        const value = !this.cam.shouldRespondToOrientationChanges;
+        console.log(`Should respond orientation changes: ${value}`);
+        this.cam.shouldKeepViewAtOrientationChanges = value;
+    }
+
+    public resetOrientation(): void {
+        this.cam.resetOrientation();
     }
 }
