@@ -1,43 +1,27 @@
 
 declare class CameraManager extends NSObject implements AVCaptureFileOutputRecordingDelegate, AVCaptureMetadataOutputObjectsDelegate, UIGestureRecognizerDelegate {
 
+	readonly cameraIsReady: boolean;
+	captureSession: AVCaptureSession;
+	hasFrontCamera: boolean;
+	imageAlbumName: string;
+	shouldFlipFrontCameraImage: boolean;
+	shouldKeepViewAtOrientationChanges: boolean;
+	shouldRespondToOrientationChanges: boolean;
+	showAccessPermissionPopupAutomatically: boolean;
+	showErrorsToUsers: boolean;
+	videoAlbumName: string;
+	writeFilesToPhoneLibrary: boolean;
+	readonly debugDescription: string; // inherited from NSObjectProtocol
+	readonly description: string; // inherited from NSObjectProtocol
+	readonly hash: number; // inherited from NSObjectProtocol
+	readonly isProxy: boolean; // inherited from NSObjectProtocol
+	readonly superclass: typeof NSObject; // inherited from NSObjectProtocol
+	readonly  // inherited from NSObjectProtocol
+
 	static alloc(): CameraManager; // inherited from NSObject
 
 	static new(): CameraManager; // inherited from NSObject
-
-	readonly cameraIsReady: boolean;
-
-	captureSession: AVCaptureSession;
-
-	hasFrontCamera: boolean;
-
-	imageAlbumName: string;
-
-	shouldFlipFrontCameraImage: boolean;
-
-	shouldKeepViewAtOrientationChanges: boolean;
-
-	shouldRespondToOrientationChanges: boolean;
-
-	showAccessPermissionPopupAutomatically: boolean;
-
-	showErrorsToUsers: boolean;
-
-	videoAlbumName: string;
-
-	writeFilesToPhoneLibrary: boolean;
-
-	readonly debugDescription: string; // inherited from NSObjectProtocol
-
-	readonly description: string; // inherited from NSObjectProtocol
-
-	readonly hash: number; // inherited from NSObjectProtocol
-
-	readonly isProxy: boolean; // inherited from NSObjectProtocol
-
-	readonly superclass: typeof NSObject; // inherited from NSObjectProtocol
-
-	readonly  // inherited from NSObjectProtocol
 
 	addLayerPreviewToViewNewCameraOutputModeCompletion(view: UIView, newCameraOutputMode: number, completion: () => void): number;
 
