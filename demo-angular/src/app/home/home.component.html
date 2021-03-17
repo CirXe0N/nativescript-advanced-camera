@@ -5,9 +5,14 @@
 <StackLayout>
     <AdvancedCamera height="300dp" width="300dp" backgroundColor="black" (loaded)="onLoaded($event)"></AdvancedCamera>
 
-    <Button text="Record" (tap)="record()"></Button>
-    <Button text="Stop Recording" (tap)="stop()"></Button>
-    <Button text="Should keep view at orientation changes" (tap)="shouldKeepViewAtOrientationChanges()"></Button>
-    <Button text="Should respond orientation changes" (tap)="shouldRespondToOrientationChanges()"></Button>
-    <Button text="Reset orientation" (tap)="resetOrientation()"></Button>
+    <ScrollView height="100%">
+        <StackLayout width="80%">
+            <Button text="Record" (tap)="record()"></Button>
+            <Button text="Stop Recording" (tap)="stop()"></Button>
+            <Button text="Write files to phone library" (tap)="writeFilesToPhoneLibrary()"></Button>
+            <Button text="Should keep view at orientation changes" (tap)="shouldKeepViewAtOrientationChanges()"></Button>
+            <Button text="Should respond orientation changes" (tap)="shouldRespondToOrientationChanges()"></Button>
+            <Button text="Reset orientation" (tap)="resetOrientation()"></Button>
+        </StackLayout>
+    </ScrollView>
 </StackLayout>

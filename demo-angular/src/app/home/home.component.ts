@@ -29,6 +29,12 @@ export class HomeComponent {
         });
     }
 
+    public writeFilesToPhoneLibrary(): void {
+        const value = !this.cam.writeFilesToPhoneLibrary;
+        console.log(`Write files to phone library: ${value}`);
+        this.cam.writeFilesToPhoneLibrary = value;
+    }
+
     public shouldKeepViewAtOrientationChanges(): void {
         const value = !this.cam.shouldKeepViewAtOrientationChanges;
         console.log(`Should keep view at orientation changes: ${value}`);
