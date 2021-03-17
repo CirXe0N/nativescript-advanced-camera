@@ -3,7 +3,7 @@
 A highly customizable NativeScript camera plugin that can easily be embedded in a view. 
 
 **NOTES**: 
-- This plugin is still in development, so for now forget `highly customizable`. :)
+- This plugin is still in development, so for now forget `highly customizable`. 🙂
 - For feature requests and bugs, feel free to open a new issue.
 
 ### Table of contents:
@@ -69,7 +69,7 @@ export class HomeComponent {
 
 ### Features
 
-*Note*: To add features to this list, feel free to open a new issue.
+**Note**: To add features to this list, feel free to open a new issue.
 
 | Feature                              | Android               | iOS                   |
 | ---------------------------------    | :-------------------: | :--------------------:|
@@ -82,14 +82,14 @@ export class HomeComponent {
 
 #### Common Properties
 
-| Property                            | Type      | Description                                                                          |
-| ----------------------------------- | :-------: | :----------------------------------------------------------------------------------: | 
-| writeFilesToPhoneLibrary            | Boolean   | Enable / Disable saving the files to phone library.                                  | 
+| Property                            | Type      | Description                                                                        |
+| ----------------------------------- | :-------: | ---------------------------------------------------------------------------------- | 
+| writeFilesToPhoneLibrary            | Boolean   | Enable / Disable saving the files to phone library.                                | 
 
 #### iOS Specific Properties
 
 | Property                            | Type      | Description                                                                          |
-| ----------------------------------- | :-------: | :----------------------------------------------------------------------------------: | 
+| ----------------------------------- | :-------: | ------------------------------------------------------------------------------------ | 
 | shouldKeepViewAtOrientationChanges  | Boolean   | Enable / Disable keeping the view with the same bounds when the orientation changes. | 
 | shouldRespondToOrientationChanges   | Boolean   | Enable / Disable the video following device orientation.                             | 
 | writeFilesToPhoneLibrary            | Boolean   | Enable / Disable saving the files to phone library.                                  | 
@@ -99,12 +99,12 @@ export class HomeComponent {
 #### Common Methods
 
 | Method               | Description                                                                            |
-| -------------------- | :------------------------------------------------------------------------------------: | 
+| -------------------- | -------------------------------------------------------------------------------------- | 
 | record()             | Starts recording a video.                                                              | 
 | stop()               | Stops the video recording and returns a Promise that gives the file path of the video. |
 
 #### iOS Specific Methods
 
 | Method               | Description                                                                          |
-| -------------------- | :----------------------------------------------------------------------------------: | 
+| -------------------- | ------------------------------------------------------------------------------------ | 
 | resetOrientation()   | Reset and redraw the preview layer orientation.                                      |
