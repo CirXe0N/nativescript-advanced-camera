@@ -37,6 +37,7 @@ HTML Template: `home.component.html`
 
 Component: `home.component.ts`
 ```typescript
+import {EventData, isIOS} from "@nativescript/core";
 import {AdvancedCamera} from "nativescript-advanced-camera";
 
 registerElement('AdvancedCamera', () => AdvancedCamera);
@@ -60,8 +61,9 @@ export class HomeComponent {
 
     public stop(): void {
         console.log('Stop Recording');
-        this.cam.stop().then((videoPath) => {
-            console.log(videoPath);
+        this.cam.stop().then((file) => {
+            const path = isIOS ? file.path : file.getPath();
+            console.log(path);
         });
     }
 }
@@ -101,7 +103,7 @@ export class HomeComponent {
 | Method               | Description                                                                            |
 | -------------------- | -------------------------------------------------------------------------------------- | 
 | record()             | Starts recording a video.                                                              | 
-| stop()               | Stops the video recording and returns a Promise that gives the file path of the video. |
+| stop()               | Stops the video recording and returns a Promise that gives the video file. |
 
 #### iOS Specific Methods
 

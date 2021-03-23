@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 import {AdvancedCamera} from "nativescript-advanced-camera";
 import {registerElement} from "@nativescript/angular";
-import {EventData} from "@nativescript/core";
+import {EventData, isIOS} from "@nativescript/core";
 
 registerElement('AdvancedCamera', () => AdvancedCamera);
 
@@ -24,8 +24,9 @@ export class HomeComponent {
 
     public stop(): void {
         console.log('Stop Recording');
-        this.cam.stop().then((videoPath) => {
-            console.log(videoPath);
+        this.cam.stop().then((file) => {
+            const path = isIOS ? file.path : file.getPath();
+            console.log(path);
         });
     }
 
