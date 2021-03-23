@@ -20,7 +20,6 @@
         "noImplicitReturns": true,
         "noImplicitUseStrict": false,
         "noFallthroughCasesInSwitch": true,
-        "outDir": "dist/out-tsc",
 		"rootDir": "."
     },
     "exclude": [

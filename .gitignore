@@ -3,6 +3,7 @@ hooks/
 node_modules/
 nsconfig.json
 demo-angular/platforms/
+publish/package/
 
 # NativeScript Template
 *.js.map
