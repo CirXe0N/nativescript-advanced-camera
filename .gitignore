@@ -8,9 +8,11 @@ publish/package/
 # NativeScript Template
 *.js.map
 *.js
+*.d.ts
 !webpack.config.js
 !src/scripts/*.js
 !src/scripts/*.js.map
+!src/index.d.ts
 
 # Logs
 logs
@@ -45,4 +47,5 @@ typings/
 .update_backup
 
 # ENV Variables
+src/environment/environment.*.ts
 src/environment/environment.*.ts
