@@ -20,7 +20,11 @@
         "noImplicitReturns": true,
         "noImplicitUseStrict": false,
         "noFallthroughCasesInSwitch": true,
-		"rootDir": "."
+		"rootDir": ".",
+        "plugins": [{
+            "transform": "@nativescript/webpack/transformers/ns-transform-native-classes",
+            "type": "raw"
+      }]
     },
     "exclude": [
         "node_modules",
