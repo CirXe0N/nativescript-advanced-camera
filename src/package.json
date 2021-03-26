@@ -1,6 +1,6 @@
 {
 	"name": "nativescript-advanced-camera",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Camera plugin for NativeScript",
 	"main": "advanced-camera",
 	"typings": "index.d.ts",
